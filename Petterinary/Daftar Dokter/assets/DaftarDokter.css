@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.page-headline {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    height: 100%;
+    width: 60%;
+}
+
+.page-illustration {
+    height: 100%;
+    width: 40%;
+}
+
+.page-illustration img {
+    height: 100%;
+    width: auto;
+}
+
+.page-title {
+    text-align: left;
+    display: flex;
+}
+
+.article-container {
+    width: 100%;
+}
+
+.search-bar {
+    background-color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 90%;
+    background: #f2f2f2;
+  }
+  
+ form.search button {
+    float: left;
+    width: 10%;
+    padding: 9px;
+    background: #d2d2d2;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: 1px solid grey;
+    cursor: pointer;
+  }
+
+form.search button:hover {
+    background: rgb(255, 255, 255);
+}
+
+.overall-container{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    padding: 20px 30px;
+}
+
+.left-box-container {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.con-button {
+    background-color: #CD9F6E;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+
+.con-button:hover{
+    background-color: #9f7c56;
+}
+
+.dokter-1{
+    display: flex;
+}
+
+.profile-picture-dokter1:hover{
+    filter: sepia();
+}
+
+.status-dokter-1{
+    padding-top: 20px;
+    width: 90%;
+}
+
+p.dokter-1-name{
+    font-weight: bold;
+}
+
+p.dokter-1-name:hover{
+    color: rgb(77, 77, 148);
+}
+
+p.dokter-1-occupation{
+    opacity: 0.6;
+}
+
+p.dokter-1-occupation:hover{
+    text-decoration: underline;
+}
+
+.dokter-2{
+    display: flex;
+}
+
+.profile-picture-dokter2:hover{
+    filter: sepia();
+}
+
+.status-dokter-2{
+    padding-top: 20px;
+    width: 90%;
+}
+
+p.dokter-2-name{
+    font-weight: bold;
+}
+
+p.dokter-2-name:hover{
+    color: rgb(77, 77, 148);
+}
+
+p.dokter-2-occupation{
+    opacity: 0.6;
+}
+
+p.dokter-2-occupation:hover{
+    text-decoration: underline;
+}
+
+.dokter-3{
+    display: flex;
+}
+
+.profile-picture-dokter3:hover{
+    filter: sepia();
+}
+
+.status-dokter-3{
+    padding-top: 20px;
+    width: 90%;
+}
+
+p.dokter-3-name{
+    font-weight: bold;
+}
+
+p.dokter-3-name:hover{
+    color: rgb(77, 77, 148);
+}
+
+p.dokter-3-occupation{
+    opacity: 0.6;
+}
+
+p.dokter-3-occupation:hover{
+    text-decoration: underline;
+}
+
+.dokter-4{
+    display: flex;
+}
+
+.profile-picture-dokter4:hover{
+    filter: sepia();
+}
+
+.status-dokter-4{
+    padding-top: 20px;
+    width: 90%;
+}
+
+p.dokter-4-name{
+    font-weight: bold;
+}
+
+p.dokter-4-name:hover{
+    color: rgb(77, 77, 148);
+}
+
+p.dokter-4-occupation{
+    opacity: 0.6;
+}
+
+p.dokter-4-occupation:hover{
+    text-decoration: underline;
+}
+
+.dokter-5{
+    display: flex;
+}
+
+.profile-picture-dokter5:hover{
+    filter: sepia();
+}
+
+.status-dokter-5{
+    padding-top: 20px;
+    width: 90%;
+}
+
+p.dokter-5-name{
+    font-weight: bold;
+}
+
+p.dokter-5-name:hover{
+    color: rgb(77, 77, 148);
+}
+
+p.dokter-5-occupation{
+    opacity: 0.6;
+}
+
+p.dokter-5-occupation:hover{
+    text-decoration: underline;
+}
+
+.dokter-6{
+    display: flex;
+}
+
+.profile-picture-dokter6:hover{
+    filter: sepia();
+}
+
+.status-dokter-6{
+    padding-top: 20px;
+    width: 90%;
+}
+
+p.dokter-6-name{
+    font-weight: bold;
+}
+
+p.dokter-6-name:hover{
+    color: rgb(77, 77, 148);
+}
+
+
+p.dokter-6-occupation{
+    opacity: 0.6;
+}
+
+p.dokter-6-occupation:hover{
+    text-decoration: underline;
+}
+
+.dokter-7{
+    display: flex;
+}
+
+.profile-picture-dokter7:hover{
+    filter: sepia();
+}
+
+.status-dokter-7{
+    padding-top: 20px;
+    width: 90%;
+}
+
+p.dokter-7-name{
+    font-weight: bold;
+}
+
+p.dokter-7-name:hover{
+    color: rgb(77, 77, 148);
+}
+
+p.dokter-7-occupation{
+    opacity: 0.6;
+}
+
+p.dokter-7-occupation:hover{
+    text-decoration: underline;
+}
+
+.dokter-8{
+    display: flex;
+}
+
+.profile-picture-dokter8:hover{
+    filter: sepia();
+}
+
+.status-dokter-8{
+    padding-top: 20px;
+    width: 90%;
+}
+
+p.dokter-8-name{
+    font-weight: bold;
+}
+
+p.dokter-8-name:hover{
+    color: rgb(77, 77, 148);
+}
+
+p.dokter-8-occupation{
+    opacity: 0.6;
+}
+
+p.dokter-8-occupation:hover{
+    text-decoration: underline;
+}
+
+#vertical-line-separator {
+    height: 100vh;
+    width: 2px;
+    border: none;
+    background-color: black;
+}
+
+.right-box-container {
+    width: 50%;
+    padding: 0 25px;
+}
+
+.nav-article {
+    width: 100%;
+    height: 210px;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-article-title {
+    margin-bottom: 10px;
+}
+
+.nav-article-illustration {
+    height: 150px;
+    width: auto;
+}

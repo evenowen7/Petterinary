@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.content-container {
+    width: 100%;
+    background-color: white;
+}
+
+.product-row{
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.produk {
+    height: 300px;
+    width: 280px;
+    background-color: #fed291;
+}
+
+.produk img {
+    height: 100%;
+    width: auto;
+}
+
+/* #produk {
+    height: 350px;
+    width: auto;
+} */
+
+#product-description {
+    height: 350px;
+    background-color: #fed291;
+}
+
+#kotak {
+    width: 40%;
+    height: auto;
+}
+
+#order-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+#pesan {
+    height: 50px;
+    width: auto;
+}

@@ -1,0 +1,127 @@
+
+/*------------------------------------------------------PROMOTIONAL SECTION START------------------*/
+
+.promotional-section-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background: url("../Pictures/BannerBackground1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.promo-section-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 0 100px;
+}
+
+.promo-section-container h2 {
+    margin-top: 10px;
+}
+
+.promo-section-container p {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.promo-section-container#left {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo-section-container#right {
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-section-container#right img {
+    height: 70%;
+    width: auto;
+}
+
+/*------------------------------------------------------PROMOTIONAL SECTION END------------------*/
+
+.section-title-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/*------------------------------------------------------SERVICES SECTION START----------------------*/
+
+.services-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-box {
+    width: 50%;
+    height: 170px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.service-image-box {
+    width: 100%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.service-name-box {
+    width: 100%;
+    text-align: center;
+}
+
+/*------------------------------------------------------SERVICES SECTION END----------------------*/
+
+/*------------------------------------------------------FEATURED ARTICLE SECTION START----------------------*/
+
+.featured-article-section-container {
+    width: 100%;
+    height: 200px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-article {
+    width: 300px;
+    height: 150px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px grey;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.featured-article .info-section {
+    height: 100%;
+    width: 55%;
+}
+
+.featured-article .image-section {
+    height: 100%;
+    width: 40%;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.featured-article .info-section h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.featured-article .info-section p {
+    font-size: 15px;
+}
+
+/*------------------------------------------------------FEATURED ARTICLE SECTION END----------------------*/
+
+.service-box:hover, .featured-article:hover {
+    transform: translateY(-2px);
+    transition: .2s ease-out;
+}

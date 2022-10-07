@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./Assets/PaymentPage-Style.css">
+    <script src="./Assets/PaymentPage-JS.js" async defer></script>
+    <script src="https://kit.fontawesome.com/366cf4fc21.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Global/Assets/Global-Style.css">
+    <script defer src="../Global/Assets/Global-JS.js"></script>
+    
+    <title>Payment Page</title>
+</head>
+<body>
+    
+     <!--Header Section Start-->
+     <header>
+        <a href="#" class="logo-container header-logo" >
+            <img src="../Global/Pictures/Logo.png" alt="">
+            <h1>Petterinary</h1>
+        </a>
+        <div class="right-section-container">
+            <div class="menu-bar">
+                <a href="../Home Page/HomePage.html" class="menu">
+                    <p>Home</p>
+                </a>
+                <a href="../Artikel1Biji/Artikel1Biji.html" class="menu active">
+                    <p>Artikel</p>
+                </a>
+                <a href="../Profile page/ProfilePage.html" class="menu">
+                    <p>Riwayat</p>
+                </a>
+                <a href="../Payment Page/PaymentPage.html" class="menu">
+                    Membership
+                </a>
+            </div>
+            <div class="my-account-container">
+                <div class="my-account">
+                    <img src="../Global/Pictures/Profpic.jpg" id="profile-picture">
+                    <div class="profile-dropdown-menu">
+                        <div class="pointer-to-profile"></div>
+                        <h3>Nama Lengkap <br><p>Status</p></h3>
+                        <ul>
+                            <li><a href="../Profile page/ProfilePage.html">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Akun Saya</p>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-gear"></i>
+                                <p>Pengaturan</p>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <p>Bantuan</p>
+                            </a></li>
+                            <li><a href="../Login Page/Login&Register.php">
+                                <i class="fa-solid fa-arrow-right-from-bracket" style="transform:rotate(180deg)"></i>
+                                <p>Logout</p>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header Section End-->
+
+    <div class="content-container">
+        <div class="page-title">
+            <h1>Halaman Pembayaran</h1>
+        </div>
+
+        <div class="payment-container">
+            <div class="insert-payment-container">
+                <h2>Pilih Metode Pembayaran</h2>
+                <hr style="height: 2px; width: 50px; border: none; background-color: black; margin: 8px 0 20px 0;">
+                <!-----------------------------------------------------------PAYMENT SELECTION SECTION START------------->
+                <div class="payment-info-container">
+                    <div class="pm-nav-bar">
+                        <ul class="tabs">
+                            <li class="tab is-active">
+                                <a data-switcher data-tab="1">
+                                    <i class="fa-solid fa-credit-card"></i>
+                                    <h2>Kartu Kredit</h2>
+                                </a>
+                            </li>
+                            <li class="tab">
+                                <a data-switcher data-tab="2">
+                                    <i class="fa-solid fa-wallet"></i>
+                                    <h2>Dompet Digital</h2>
+                                </a>
+                            </li>
+                            <li class="tab">
+                                <a data-switcher data-tab="3">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    <h2>E-Banking</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pages">
+                        <div class="page is-active" data-page="1">
+                            <form action="#">
+                                <label>Nama Pemegang Kartu</label>
+                                <div class="txt">
+                                    <input type="text" required>
+                                </div>
+                                <label>Nomor Kartu</label>
+                                <div class="txt">
+                                    <input type="text" required>
+                                </div>
+                                <div style="display: flex; width: 550px; justify-content: space-between;">
+                                    <div>
+                                        <label>Bulan</label>
+                                        <div class="y-txt">
+                                            <input type="text" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>Tahun</label>
+                                        <div class="y-txt">
+                                            <input type="text" required>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label>CVV</label>
+                                        <div class="y-txt">
+                                            <input type="text" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label>Alamat Tinggal</label>
+                                <div class="txt">
+                                    <input type="text" required>
+                                </div>
+                                <div>
+                                    <label>Kode Pos</label>
+                                    <div class="y-txt">
+                                        <input type="text" required>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="page" data-page="2">
+                            <h2>Page 2</h2>
+                            <p>About page</p>
+                        </div>
+                        <div class="page" data-page="3">
+                            <h2>Page 3</h2>
+                            <p>Services page</p>
+                        </div>
+                        <div class="page" data-page="4">
+                            <h2>Page 4</h2>
+                            <p>Contact page</p>
+                        </div>
+                    </div>
+                </div>
+                <!-----------------------------------------------------------PAYMENT SELECTION SECTION END------------->
+            </div>
+
+            <div class="end-payment-container">
+                <div class="payment-summary-container">
+                    <h2>Ringkasan Pembayaran</h2>
+                    <div class="payment-row">
+                        <div class="row">
+                            <p>Tanggal Pembayaran</p>
+                            <p>March 24, 2022</p>
+                        </div>
+                        <div class="row">
+                            <p>Metode Pembayaran</p>
+                            <p>Kartu Kredit</p>
+                        </div>
+                    </div>
+                    <div class="payment-row">
+                        <p>Barang</p>
+                        <div class="items-container">
+                            <div class="row">
+                                <p>Membership</p>
+                                <p>Rp. 90.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-row">
+                        <div class="row">
+                            <p>Sub Total</p>
+                            <p>Rp. 90.000</p>
+                        </div>
+                        <div class="row">
+                            <p>Diskon</p>
+                            <p>Rp. 0</p>
+                        </div>
+                        <div class="row">
+                            <p>Pajak</p>
+                            <p>Rp. 0</p>
+                        </div>
+                    </div>
+                    <div id="total">
+                        <p>Total: Rp. 90.000</p>
+                    </div>
+                </div>
+
+                <a href="#" style=" text-decoration: none;">
+                    <div class="make-payment-button">
+                        <h1>LAKUKAN PEMBAYARAN</h1>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    
+     <!--Footer Section Start-->
+    <footer>
+        <div id="footer-logo"><img src="../Global/Pictures/Logo.png" alt="logo" height="35" width="35">
+            <p>Petterinary</p>
+        </div>
+        <div class="footer-content">
+            <div class="footer-column-container" style="display: flex; align-items: flex-end;">
+                <p>©Petterinary, 2022. ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="footer-column-container">
+                <div href="" class="support">
+                    <a href="#">
+                        Kontak
+                    </a>
+                </div>
+                <div href="" class="support">
+                    <a href="#">
+                        FAQ
+                    </a>
+                </div>
+                <div href="" class="support">
+                    <a href="../About Us/About Us.html">
+                        Tentang Kami
+                    </a>
+                </div>
+            </div>
+        
+            <div class="footer-column-container" style="justify-content: center;" >
+                <p style="margin-right: 10px;" >Ikuti akun media sosial kami di</p>
+                <a href="#" class="social-media-logo">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="social-media-logo">
+                    <i class="fa-brands fa-instagram-square"></i>
+                </a>
+                <a href="#" class="social-media-logo">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="social-media-logo">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        
+    </footer>
+    <!--Footer Section End-->
+
+</body>
+</html>

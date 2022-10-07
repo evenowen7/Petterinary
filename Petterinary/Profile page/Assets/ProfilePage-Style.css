@@ -1,0 +1,320 @@
+
+* {
+    zoom: 100%;
+}
+
+.overall-container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 100px;
+    background-color: #EDEDED;
+}
+
+.page-title {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-container {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-box-container {
+    height: 100%;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-box-container {
+    height: 100%;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*-----------------------------------------------------------------LEFT BOX START---------------------------------------*/
+
+/*-----------------------------------------------------------------PROFILE INFO END START------------------------*/
+
+.profile-info-box {
+    width: 100%;
+    height: 42%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture-box {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: grey;
+    margin-bottom: 8px;
+}
+
+.profile-picture-box img {
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile-picture-box-overlay {
+   background: black;
+    position: absolute;
+    left: 46%;
+    top: 46%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    visibility: hidden;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.profile-picture-box:hover .profile-picture-box-overlay {
+    visibility: visible;
+    cursor: pointer;
+}
+
+.profile-info-box h3 {
+    margin: 2px 0;
+}
+
+/*-----------------------------------------------------------------PROFILE INFO BOX END------------------------*/
+
+/*-----------------------------------------------------------------PERSONAL INFO END START------------------------*/
+
+.personal-info-box {
+    width: 100%;
+    height: 53%;
+    background-color: white;
+}
+
+.personal-info {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    margin: 5px 25px;
+}
+
+.personal-info i {
+    font-size: 25px;
+}
+
+.personal-info span {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+#map {
+    width: 100%;
+    height: 32%;
+}
+
+.marker {
+    background-image: url('../Images/mapbox-icon.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+/*-----------------------------------------------------------------PERSONAL INFO BOX END------------------------*/
+
+/*-----------------------------------------------------------------LEFT BOX END---------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------RIGHT BOX START---------------------------------------*/
+
+/*-----------------------------------------------------------------MEMBERSHIP PROMOTIONAL BOX START------------------------*/
+
+.membership-promotional-box {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    padding: 10px 30px;
+}
+
+.membership-promotional-box p {
+    margin: 4px 0;
+    font-size: 16px;
+}
+
+#membership-btn {
+    height: 30px;
+    width: 250px;
+    margin-top: 7px;
+    background-color: #FF9900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+    transition: 200ms ease-out;
+}
+
+#membership-btn:hover {
+    transform: translateY(-2px);
+}
+
+/*-----------------------------------------------------------------MEMBERSHIP PROMOTIONAL BOX END------------------------*/
+
+/*------------------------------------------------------------------------ACCOUNT INFO SECTION START--------------------------*/
+
+.account-info-container {
+    width: 100%;
+    height: 80%;
+}
+
+.ac-nav-bar {
+    width: 100%;
+    height: 10%;
+    border: 1px solid black;
+    margin: 20px 0;
+}
+
+.ac-nav-bar .tabs {
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+
+.ac-nav-bar .tabs .tab {
+    font-size: 16px;
+    width: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ac-nav-bar .tabs .tab a[data-switcher] {
+    text-decoration: none;
+    color: #707070;
+    border-bottom: none;
+    height: 80%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ac-nav-bar .tabs .tab:hover a[data-switcher]{
+    text-decoration: none;
+    color: black;
+    background: white;
+    transition: 200ms ease-in;
+}
+
+.ac-nav-bar .tabs .tab.is-active a[data-switcher]{
+    text-decoration: none;
+    color: black;
+    background: #96e0e9;
+    transition: 200ms ease-in;
+    background: white;
+}
+
+.pages {
+    width: 100%;
+    height: 81.7%;
+    background: white;
+    padding: 10px;
+}
+
+.pages .page {
+    display: none;
+    height: 100%;
+}
+
+.pages .page.is-active {
+    display: block;
+}
+
+.profile-page-title-box {
+    width: 100%;
+    height: 10%;
+    border-bottom: 1.8px solid black;
+    padding: 0 45px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.profile-page-title-box p {
+    font-size: 20px;
+}
+
+.profile-page-info-box {
+    height: 90%;
+    width: 100%;
+    padding: 0 45px;
+}
+
+#profile-info {
+    height: 100%;
+    width: 100%;
+}
+
+#profile-info .txt {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#profile-info .txt label {
+    width: 200px;
+}
+
+#profile-info .txt input {
+    width: 50%;
+    padding: 0 5px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid black;
+    background: none;
+    outline: none;
+}
+
+.finish-btn {
+    height: 40px;
+    width: 200px;
+    background-color: #FF9900;
+    margin-top: 30px;
+}
+
+.finish-btn button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+/*------------------------------------------------------------------------ACCOUNT INFO SECTION END--------------------------*/
+
+/*-----------------------------------------------------------------RIGHT BOX END---------------------------------------*/

@@ -1,0 +1,331 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    box-shadow: 2px 2px 4px 4px grey;
+}
+
+.section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section.right {
+    background-color: #FF9900;
+    flex-direction: column;
+}
+
+.section.left {
+    background-color: white;
+}
+
+/*-----------------------------------------------------------RIGHT SECTION START-------------*/
+
+.logo-box {
+    height: 40px;
+    display: flex;
+    transform: translate(-110%, -50%);
+}
+
+.logo-box img {
+    height: 100%;
+    width: auto;
+    margin-right: 7px;
+}
+
+.logo-box p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 1000;
+}
+
+#picture {
+    height: 80%;
+    width: auto;
+}
+
+#peek {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    transform: translate(183%, -0.7%);
+}
+
+/*-----------------------------------------------------------RIGHT SECTION END-------------*/
+
+/*-----------------------------------------------------------LOGIN SECTION START------------------*/
+.log-on-container {
+    width: 370px;
+    height: 450px;
+    padding: 20px 0;
+    border-radius: 25px;
+ 
+}
+
+.lo-nav-bar {
+    width: 100%;
+    height: 8%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.lo-nav-bar .tabs {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
+
+.lo-nav-bar .tabs .tab {
+    font-size: 16px;
+    width: 50%;
+}
+
+.lo-nav-bar .tabs .tab a[data-switcher] {
+    text-decoration: none;
+    color: #FF9900;
+    border-bottom: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lo-nav-bar .tabs .tab:hover a[data-switcher]{
+    text-decoration: none;
+    color: black;
+    border-radius: 25px;
+}
+
+.lo-nav-bar .tabs .tab.is-active a[data-switcher]{
+    text-decoration: none;
+    color: black;
+    background: #96e0e9;
+    background-color: #FF9900;
+    border-radius: 25px;
+}
+
+.pages {
+    width: 100%;
+    height: 90%;
+    
+    padding-top: 5%;
+}
+
+.pages .page {
+    display: none;
+}
+
+.pages .page.is-active {
+    display: block;
+}
+
+.pages .page h1{
+    text-align: center;
+}
+
+
+/*-----------------------------------------------------------INPUT SECTION START--------------------------*/
+form {
+    padding: 0 20px 0 40px;
+    width: 400px;
+}
+
+form .txt {
+    position: relative;
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+#login .txt {
+    margin: 30px 0;
+}
+
+.txt input {
+    width: 85%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    transition: .5s;
+    color: #797979;
+    pointer-events: none;
+}
+
+.txt span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.txt input:focus ~ label,
+.txt input:valid ~ label {
+    top: -5px;
+    color: #f53803;
+}
+
+form .txt:focus {
+    border-bottom: #f53803;
+}
+
+span.show {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+input:valid ~ span.show {
+    visibility: visible;
+}
+
+.txt i {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    visibility: hidden;
+}
+
+.txt p {
+    position: absolute;
+    color: red;
+    bottom: -25px;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+.txt.success {
+    border-bottom: 2px solid green;
+}
+
+.txt.error {
+    border-bottom: 2px solid red;
+}
+
+.txt.success i.fa-solid.fa-circle-check {
+    visibility: visible;
+    color: green;
+}
+
+.txt.error i.fa-solid.fa-circle-xmark {
+    visibility: visible;
+    color: red;
+}
+
+.txt.success span.show,
+.txt.error span.show {
+    right: 10%;
+}
+
+.txt.success input.pswrd,
+.txt.error input.pswrd {
+    width: 75%;
+}
+
+
+/*--------------------------------------------------INPUT SECTION END----------------*/
+
+#forget-password {
+    margin-top: 10px;
+}
+
+#forget-password:hover {
+    cursor: pointer;
+}
+
+.finish-btn {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: #FF9900;
+    border-radius: 25px;
+}
+
+.finish-btn button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------------LOGIN SECTION END------------------*/
+
+/*--------------------------------------------------REGISTER SECTION START----------------*/
+
+.r-name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.r-name .txt {
+    width: 47%;
+    border-bottom: 2px solid black;
+}
+
+.r-name .txt input {
+    width: 100%;
+    padding: 0 5px;
+}
+
+#register .txt {
+    margin: 20px 0;
+}
+
+#register .txt input {
+    height: 30px;
+}
+
+.dob-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.select-box {
+   border: none;
+}
+
+.select-box select {
+    height: 42px;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/*--------------------------------------------------REGISTER SECTION END----------------*/

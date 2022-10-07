@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.content-container{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 100px;
+    background-color: #EDEDED;
+}
+
+.page-title {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.payment-container{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*----------------------------------------------------------------PAYMENT DATA ENTRY SECTION START--------------------------*/
+
+.insert-payment-container{
+    height: 100%;
+    width: 67%;
+    background-color: white;
+    padding: 20px;
+}
+
+/*------------------------------------------------------------------------PAYMENT SELECTION SECTION START--------------------------*/
+
+.payment-info-container {
+    width: 100%;
+    height: 500px;
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+.pm-nav-bar {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 30px;
+}
+
+.pm-nav-bar .tabs {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.pm-nav-bar .tabs .tab {
+    height: 100%;
+    width: 30%;
+    border: 2px solid black;
+}
+
+.pm-nav-bar .tabs .tab a[data-switcher] {
+    text-decoration: none;
+    color: black;
+    border-bottom: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.pm-nav-bar .tabs .tab a[data-switcher] i{
+    font-size: 40px;
+    margin-right: 12px;
+}
+
+.pm-nav-bar .tabs .tab:hover a[data-switcher]{
+    text-decoration: none;
+    color: white;
+    background: #FF9900;
+    transition: 200ms ease-in;
+}
+
+.pm-nav-bar .tabs .tab.is-active a[data-switcher]{
+    text-decoration: none;
+    color: white;
+    background: #96e0e9;
+    transition: 200ms ease-in;
+    background: #FF9900;
+}
+
+.pages {
+    width: 100%;
+    height: 75%;
+}
+
+.pages .page {
+    display: none;
+}
+
+.pages .page.is-active {
+    display: block;
+}
+
+/*-----------------------------------------------------------------------------INSERT PAYMENT DATA SECTION START----------------------*/
+
+form [class*="txt"]{
+    border: 1.5px solid black;
+    height: 30px;
+    width: 550px;
+    margin: 6px 0 15px 0;
+}
+
+[class*="txt"] input {
+    padding: 0 10px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt input {
+    width: 100%
+}
+
+form .y-txt {
+    width: 150px;
+}
+
+/*-----------------------------------------------------------------------------INSERT PAYMENT DATA SECTION END----------------------*/
+
+/*------------------------------------------------------------------------PAYMENT SELECTION SECTION END--------------------------*/
+
+/*----------------------------------------------------------------PAYMENT DATA ENTRY SECTION END--------------------------*/
+.end-payment-container{
+    height: 100%;
+    width: 31%;
+}
+
+.payment-summary-container{
+    height: 80%;
+    width: 100%;
+    color: white;
+    background-color: #FF9900;
+    padding: 25px 20px;
+}
+
+.payment-summary-container h2 {
+    color: white;
+    height: 40px;
+    border-bottom: 2px solid white;
+}
+
+.payment-row {
+    border-bottom: 2px solid white;
+    margin: 10px 0;
+}
+
+.payment-row .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+#total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#total p {
+    color: white;
+}
+
+.payment-row p {
+    color: white;
+}
+
+.items-container {
+    padding-left: 10px;
+    height: 90px;
+}
+
+.make-payment-button{
+    width: 100%;
+    height: 12%;
+    border: 4px solid #FF9900;
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.make-payment-button h1 {
+    color: #FF9900;
+}
+
+.make-payment-button:hover {
+    transform: translateY(-2px);
+    background-color: #FF9900;
+}
+
+.make-payment-button:hover h1 {
+    color: white;
+}

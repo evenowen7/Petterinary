@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/*Orange color = #FF9900*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: #EDEDED;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*=============================================HEADER SECTION START==========================*/
+header  {
+    width: 100%;
+    height: 65px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF9900;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-container.header-logo {
+    height: 100%;
+    width: 300px;
+}
+
+.logo-container img {
+    height: 90%;
+    width: auto;
+    margin-right: 10px;
+}
+
+.right-section-container {
+    display: flex;
+}
+
+.menu-bar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    height: 100%;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    transition: 200ms ease-out;
+    margin: 0 20px;
+}
+
+.menu.active {
+    border-bottom: 4px solid black;
+}
+
+.menu:hover {
+    border-bottom: 4px solid black;
+}
+
+.my-account-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.my-account {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.my-account img {
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.my-account.active {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----------------------------------------------------------------PROFILE DROPDOWN MENU START--------------------------------*/
+
+.profile-dropdown-menu {
+    width: 200px;
+    position: absolute;
+    top: 80px;
+    right: 25px;
+    display: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #888888;
+    background-color: white;
+}
+
+.profile-dropdown-menu.active {
+    display: block;
+}
+
+.pointer-to-profile {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 45%;
+    top: -10px;
+    z-index: -1;
+    box-shadow: 2px -2px 5px #888888;
+}
+
+.profile-dropdown-menu h3 {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.profile-dropdown-menu h3 p {
+    font-size: 15px;
+    margin-top: 5px;
+    color: #616161;
+}
+
+.profile-dropdown-menu ul li {
+    list-style: none;
+}
+
+.profile-dropdown-menu ul li a{
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid grey;
+    text-decoration: none;
+    color: black;
+}
+
+.profile-dropdown-menu ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.profile-dropdown-menu ul li a p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/*----------------------------------------------------------------PROFILE DROPDOWN MENU END--------------------------------*/
+
+/*=============================================HEADER SECTION END==========================*/
+
+/*=============================================FOOTER SECTION START==========================*/
+
+
+#footer-logo{
+    width: 100%;
+    height: 30px;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-logo img {
+    height: 100%;
+    width: auto;
+    margin-right: 10px;
+}
+
+#footer-logo p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*@media screen and (max-width: 100%) {
+    
+    footer {
+        position: absolute;
+        bottom: 0;
+        border: 2px solid red;
+    }
+
+}*/
+
+footer {
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-content {
+    width: 100%;
+    height: 80px;
+    background-color: #CD9F6E;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.footer-column-container {
+    height: 100%;
+    width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.support {
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-logo {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    font-size: 32px;
+}
+
+
+/*=============================================FOOTER SECTION END==========================*/

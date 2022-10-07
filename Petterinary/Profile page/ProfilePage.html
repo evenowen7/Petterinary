@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="./Assets/ProfilePage-Style.css">
+    <script src="https://kit.fontawesome.com/366cf4fc21.js" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../Global/Assets/Global-Style.css">
+    <script src="./Assets/ProfilePage-JS.js"></script>
+    <script defer src="../Global/Assets/Global-JS.js"></script>
+
+    <title>Profile Page</title>
+</head>
+<body>
+    
+    <!--Header Section Start-->
+    <header>
+        <a href="#" class="logo-container header-logo" >
+            <img src="../Global/Pictures/Logo.png" alt="">
+            <h1>Petterinary</h1>
+        </a>
+        <div class="right-section-container">
+            <div class="menu-bar">
+                <a href="../Home Page/HomePage.html" class="menu">
+                    <p>Home</p>
+                </a>
+                <a href="../Artikel1Biji/Artikel1Biji.html" class="menu active">
+                    <p>Artikel</p>
+                </a>
+                <a href="../Profile page/ProfilePage.html" class="menu">
+                    <p>Riwayat</p>
+                </a>
+                <a href="../Payment Page/PaymentPage.html" class="menu">
+                    Membership
+                </a>
+            </div>
+            <div class="my-account-container">
+                <div class="my-account">
+                    <img src="../Global/Pictures/Profpic.jpg" id="profile-picture">
+                    <div class="profile-dropdown-menu">
+                        <div class="pointer-to-profile"></div>
+                        <h3>Nama Lengkap <br><p>Status</p></h3>
+                        <ul>
+                            <li><a href="../Profile page/ProfilePage.html">
+                                <i class="fa-solid fa-user"></i>
+                                <p>Akun Saya</p>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-gear"></i>
+                                <p>Pengaturan</p>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa-solid fa-circle-question"></i>
+                                <p>Bantuan</p>
+                            </a></li>
+                            <li><a href="../Login Page/Login&Register.php">
+                                <i class="fa-solid fa-arrow-right-from-bracket" style="transform:rotate(180deg)"></i>
+                                <p>Logout</p>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header Section End-->
+
+    <div class="overall-container">
+        <div class="page-title">
+            <h1>Akun Saya</h1>
+        </div>
+
+        <div class="profile-container">
+            <div class="left-box-container">
+                <div class="profile-info-box">
+                    <div class="profile-picture-box">
+                        <img src="./Images/Profpic.jpg" alt="">
+                        <div class="profile-picture-box-overlay">
+                            <p>Ganti Gambar</p>
+                        </div>
+                    </div>
+                    <h3 style="color: #FF9900;">Nama Lengkap</h3>
+                    <h3>Umur</h3>
+                </div>
+
+                <div class="personal-info-box">
+                    <div class="personal-info">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <span>Nomor Telepon</span>
+                    </div>
+                    <div class="personal-info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Email</span>
+                    </div>
+                    <div class="personal-info">
+                        <i class="fa-solid fa-lock"></i>
+                        <span>Password</span>
+                    </div>
+                    <div class="personal-info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Alamat</span>
+                    </div>
+                    <div id='map'></div>
+                </div>
+            </div>
+            <!-----------------------------------------------------------RIGHT BOX SECTION START------------->
+            <div class="right-box-container">
+                <div class="membership-promotional-box">
+                    <p>Sepertinya Anda belum menjadi member</p>
+                    <p style="color: #FF9900;">Jadilah member sekarang dan dapatkan berbagai keuntungan seterusnya</p>
+                    <a href="#" style=" text-decoration: none; " >
+                        <div id="membership-btn">
+                            <p>Dapatkan Membership</p>
+                        </div>
+                    </a>
+                </div>
+                <!-----------------------------------------------------------ACCOUNT INFO SECTION START------------->
+                <div class="account-info-container">
+                    <div class="ac-nav-bar">
+                        <ul class="tabs">
+                            <li class="tab is-active">
+                                <a data-switcher data-tab="1">Informasi Pribadi</a>
+                            </li>
+                            <li class="tab">
+                                <a data-switcher data-tab="2">Informasi Akun</a>
+                            </li>
+                            <li class="tab">
+                                <a data-switcher data-tab="3">Riwayat</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pages">
+                        <div class="page is-active" data-page="1">
+                            <div class="profile-page-title-box">
+                                <p>Informasi Pribadi</p>
+                            </div>
+                            <div class="profile-page-info-box">
+                                <form id="profile-info" action="">
+                                    <div class="txt">
+                                        <label>Nama Lengkap</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="txt">
+                                        <label>Nomor Telepon</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="txt">
+                                        <label>Alamat</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="finish-btn">
+                                        <button>Simpan Perubahan</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="page" data-page="2">
+                            <div class="profile-page-title-box">
+                                <p>Informasi Akun</p>
+                            </div>
+                            <div class="profile-page-info-box">
+                                <form id="profile-info" action="">
+                                    <div class="txt">
+                                        <label>Email</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="txt">
+                                        <label>Password</label>
+                                        <input type="password">
+                                    </div>
+                                    <div class="finish-btn">
+                                        <button>Simpan Perubahan</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="page" data-page="3">
+                            <h2>Page 3</h2>
+                            <p>Services page</p>
+                        </div>
+                    </div>
+                </div>
+                <!-----------------------------------------------------------ACCOUNT INFO SECTION END------------->
+            </div>
+             <!-----------------------------------------------------------RIGHT BOX SECTION END------------->
+        </div>
+    </div>
+
+ <!--Footer Section Start-->
+ <footer>
+    <div id="footer-logo"><img src="../Global/Pictures/Logo.png" alt="logo" height="35" width="35">
+        <p>Petterinary</p>
+    </div>
+    <div class="footer-content">
+        <div class="footer-column-container" style="display: flex; align-items: flex-end;">
+            <p>©Petterinary, 2022. ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="footer-column-container">
+            <div href="" class="support">
+                <a href="#">
+                    Kontak
+                </a>
+            </div>
+            <div href="" class="support">
+                <a href="#">
+                    FAQ
+                </a>
+            </div>
+            <div href="" class="support">
+                <a href="../About Us/About Us.html">
+                    Tentang Kami
+                </a>
+            </div>
+        </div>
+    
+        <div class="footer-column-container" style="justify-content: center;" >
+            <p style="margin-right: 10px;" >Ikuti akun media sosial kami di</p>
+            <a href="#" class="social-media-logo">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="social-media-logo">
+                <i class="fa-brands fa-instagram-square"></i>
+            </a>
+            <a href="#" class="social-media-logo">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="social-media-logo">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+    
+</footer>
+<!--Footer Section End-->
+
+</body>
+</html>

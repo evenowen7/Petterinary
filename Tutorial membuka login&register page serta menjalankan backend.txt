@@ -1,0 +1,25 @@
+Tutorial menggunakan login page dan backend petterinary
+
+Cara mengimport file
+1. Buka file XAMPP
+2. Cari file dengan nama htdocs
+3. Masukkan file "Petterinary" ke dalam htdocs
+
+Cara menjalankan Website dengan Backend
+1. Buka XAMPP Control Panel
+2. Start Apache kemudian MySQL
+3. Klik tombol "Admin" pada row MySQL untuk membuka "localhost/phpmyadmin"
+4. Import file SQL dengan nama "petterinary" yang telah dicantumkan dalam file
+
+Cara Membuka Website
+1. Buka browser
+2. pada searchbar di atas search "localhost/Petterinary/Login Page/Login&Register.php"
+
+Untuk Login
+1. Pastikan terdapat akun yang sudah terdaftar pada pada databse petterinary pada
+"localhost/phpmyadmin"
+2. Jika belum ada akun yang terdaftar, maka buatlah akun pada menu register
+3. Setelah membuat akun pada menu register, masukkan email dan password
+dari akun tersebut pada menu login.
+4. Setelah mengisi, dengan mengklik tombol login, user akan diarahkan menuju
+home page
